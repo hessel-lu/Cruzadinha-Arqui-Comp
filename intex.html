@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palavra Cruzada</title>
+    <title>Palavras Cruzadas</title>
 
+    <link rel="shortcut icon" href="imagens/palavras-cruzadas.png">
     <link rel="stylesheet" href="style.css">
     <script src="funcoes.js"></script>
     
@@ -13,11 +14,11 @@
 <body>
     <!-- div reponsável por guardar todo grupo de divs -->
     <div class="global-container">
-
+        
         <div class="left-container">
-            
-            <div class="">
-            
+
+            <div class="imagens">
+                <img src="imagens/Questions.gif" alt="">
             </div>
             
         </div>
@@ -62,9 +63,9 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <button onclick="buttonUm()" class="button-cruzadinha">1</button> <!--numero 1-->
-                    <input class="input-cruzadinha" type="text">     
-                    <input class="input-cruzadinha" type="text">  
-                    <input class="input-cruzadinha" type="text">   
+                    <input id="c" onkeyup="CPU1()" class="input-cruzadinha" type="text">     
+                    <input id="p" onkeyup="CPU2()" class="input-cruzadinha" type="text">  
+                    <input id="u" onkeyup="CPU3()" class="input-cruzadinha" type="text">   
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -91,7 +92,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
-                    <input class="input-cruzadinha" type="text">    
+                    <input id="n" onkeyup="ULA2()" class="input-cruzadinha" type="text">    
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -118,7 +119,7 @@
                     <button onclick="buttonDez()" class="button-cruzadinha">10</button> <!--numero 10--> 
                     <input class="input-cruzadinha" type="text">     
                     <input class="input-cruzadinha" type="text">  
-                    <input class="input-cruzadinha" type="text">    
+                    <input id="i" onkeyup="ULA3()" class="input-cruzadinha" type="text">    
                     <input class="input-cruzadinha" type="text">  
                     <input class="divInputColor-cruzadinha" type="text">
                     <input class="input-cruzadinha" type="text">  
@@ -145,7 +146,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
-                    <input class="input-cruzadinha" type="text">    
+                    <input id="d" onkeyup="ULA4()" class="input-cruzadinha" type="text">    
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -172,7 +173,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
-                    <input class="input-cruzadinha" type="text">    
+                    <input id="a" onkeyup="ULA5()" class="input-cruzadinha" type="text">    
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -199,7 +200,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <button onclick="buttonQuinze()" class="button-cruzadinha">15</button>  <!--numero 15-->  
-                    <input class="input-cruzadinha" type="text">    
+                    <input id="d1" onkeyup="ULA6()" class="input-cruzadinha" type="text">    
                     <input class="input-cruzadinha" type="text"> 
                     <input class="input-cruzadinha" type="text"> 
                     <input class="input-cruzadinha" type="text"> 
@@ -226,7 +227,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
-                    <input class="input-cruzadinha" type="text">   
+                    <input id="e" onkeyup="ULA7()" class="input-cruzadinha" type="text">
                     <input class="divInput-cruzadinha" type="text">
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -280,7 +281,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text">    
-                    <input class="input-cruzadinha" type="text">    
+                    <input id="l" onkeyup="ULA8()" class="input-cruzadinha" type="text">    
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -307,7 +308,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
-                    <input class="input-cruzadinha" type="text">    
+                    <input id="o" onkeyup="ULA9()" class="input-cruzadinha" type="text">    
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -334,8 +335,8 @@
                     <button onclick="buttonTres()" class="button-cruzadinha">3</button> <!--numero 3--> 
                     <input class="input-cruzadinha" type="text"> 
                     <input class="input-cruzadinha" type="text">   
+                    <input id="g" onkeyup="ULA10()" class="input-cruzadinha" type="text"> 
                     <input class="input-cruzadinha" type="text">   
-                    <input class="input-cruzadinha" type="text"> 
                     <input class="input-cruzadinha" type="text"> 
                     <input class="input-cruzadinha" type="text"> 
                     <input class="input-cruzadinha" type="text"> 
@@ -361,7 +362,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text">  
-                    <input class="input-cruzadinha" type="text">    
+                    <input id="i1" onkeyup="ULA11()" class="input-cruzadinha" type="text">    
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -388,7 +389,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
-                    <input class="input-cruzadinha" type="text">  
+                    <input id="c2" onkeyup="ULA12()" class="input-cruzadinha" type="text">  
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -415,7 +416,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text">    
                     <input class="divInput-cruzadinha" type="text"> 
-                    <input class="input-cruzadinha" type="text">   
+                    <input id="a1" onkeyup="ULA13()" class="input-cruzadinha" type="text">   
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -442,7 +443,7 @@
                     <input class="input-cruzadinha" type="text">   
                     <input class="divInputColor-cruzadinha" type="text">   
                     <input class="input-cruzadinha" type="text">    
-                    <input class="input-cruzadinha" type="text"> 
+                    <button class="button-cruzadinha1">E</button>
                     <input class="divInputColor-cruzadinha" type="text"> 
                     <input class="input-cruzadinha" type="text">   
                     <input class="input-cruzadinha" type="text"> 
@@ -469,7 +470,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text">   
-                    <input class="input-cruzadinha" type="text">   
+                    <input id="a3" onkeyup="ULA14()" class="input-cruzadinha" type="text">   
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -496,7 +497,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text">  
-                    <input class="input-cruzadinha" type="text">  
+                    <input id="r" onkeyup="ULA15()" class="input-cruzadinha" type="text">  
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -523,7 +524,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text">   
-                    <input class="input-cruzadinha" type="text">  
+                    <input id="i2" onkeyup="ULA16()" class="input-cruzadinha" type="text">  
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -550,7 +551,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text">   
-                    <input class="input-cruzadinha" type="text">  
+                    <input id="t" onkeyup="ULA17()" class="input-cruzadinha" type="text">  
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text">  
                     <button onclick="buttonDezesseis()" class="button-cruzadinha">16</button> <!--numero 16-->
@@ -577,7 +578,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text">   
-                    <input class="input-cruzadinha" type="text">     
+                    <input id="m" onkeyup="ULA18()" class="input-cruzadinha" type="text">     
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -604,7 +605,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text">   
                     <input class="divInput-cruzadinha" type="text"> 
-                    <input class="input-cruzadinha" type="text">    
+                    <input id="e2" onkeyup="ULA19()" class="input-cruzadinha" type="text">    
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -631,7 +632,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text">   
-                    <input class="input-cruzadinha" type="text">    
+                    <input id="d2" onkeyup="ULA20()" class="input-cruzadinha" type="text">    
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -658,7 +659,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text">  
                     <button onclick="buttonQuatorze()" class="button-cruzadinha">14</button> <!--numero 14-->
-                    <input class="input-cruzadinha" type="text">  
+                    <input id="i3" onkeyup="ULA21()" class="input-cruzadinha" type="text">  
                     <input class="input-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -685,7 +686,7 @@
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
-                    <input class="input-cruzadinha" type="text">     
+                    <input id="c3" onkeyup="ULA22()" class="input-cruzadinha" type="text">     
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
                     <input class="divInput-cruzadinha" type="text"> 
@@ -712,7 +713,7 @@
                     <input class="input-cruzadinha" type="text"> 
                     <input class="input-cruzadinha" type="text"> 
                     <input class="input-cruzadinha" type="text"> 
-                    <input class="input-cruzadinha" type="text">    
+                    <input id="a4" onkeyup="ULA23()" class="input-cruzadinha" type="text">    
                     <input class="divInputColor-cruzadinha" type="text"> 
                     <input class="input-cruzadinha" type="text"> 
                     <input class="input-cruzadinha" type="text"> 
@@ -730,7 +731,19 @@
 
         </div>
         
-        <div class="right-container">
+        <div class="rigth-containerMae">
+            
+            <div class="right-container">
+
+                <div class="imagens">
+                    <img src="imagens/Team goals-amico.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="right-container2">
+                <span id="spanText"></span>
+            </div>
 
         </div>
 
