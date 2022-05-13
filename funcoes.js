@@ -1,66 +1,66 @@
     // Funções dos botões/dicas:
     function buttonUm() {
-        alert("Dica:")
+        alert("Dica: Parte que representa o cérebro do computador, o componente mais essencial.")
     }
 
     function buttonDois() {
-        alert("Dica:")
+        alert("Dica: Parte responsável por executar somas, subtrações e funções lógicas.")
     }
 
     function buttonTres() {
-        alert("Dica:")
+        alert("Dica: Memória alocada dentro da cpu.")
     }
 
     function buttonQuatro() {
-        alert("Dica:")
+        alert("Dica: Memória que permite ler e gravar, mas perde a informação, sem energia.")
     }
 
     function buttonCinco() {
-        alert("Dica:")
+        alert("Dica: Memória que permite apenas leitura e guarda informação após corte de energia.")
     }
 
     function buttonSeis() {
-        alert("Dica:")
+        alert("Dica: Memória não volátil da Unidade de Comando Eletrônico.")
     }
 
     function buttonSete() {
-        alert("Dica:")
+        alert("Dica: Memória ideal para aparelhos móveis ou com uso de bateria.")
     }
 
     function buttonOito() {
-        alert("Dica:")
+        alert("Dica: Memória não volátil, grava informações e não as perde sem fonte de energia.")
     }
 
     function buttonNove() {
-        alert("Dica:")
+        alert("Dica: Recurso utilizado para poupar o processador na comunicação de periféricos com o computador.")
     }
 
     function buttonDez() {
-        alert("Dica:")
+        alert("Dica: Linha de controle usada para seleção de um circuito integrado conectado a um barramento onde há mais circuitos.")
     }
 
     function buttonOnze() {
-        alert("Dica")
+        alert("Dica: Parte que que transfere o endereço na memória.")
     }
 
     function buttonDoze() {
-        alert("Dica:")
+        alert("Dica: Via elétrica usada para transferir dados.")
     }
 
     function buttonTreze() {
-        alert("Dica:")
+        alert("Dica: Processador com até 4 núcleos, sem Hyper-threading.")
     }
 
     function buttonQuatorze() {
-        alert("Dica:")
+        alert("Dica: Processador com 6 núcleos, com Hyper-Threading.")
     }
 
     function buttonQuinze() {
-        alert("Dica:")
+        alert("Dica: Processador com dois núcleos.")
     }
 
     function buttonDezesseis() {
-        alert("Dica:")
+        alert("Dica: Processador com quatro núcleos ou dois núcleos físicos e dois virtuais.")
     }
     // fim das funções dos botões/dicas.
 
@@ -230,12 +230,9 @@
         }
     }
     function ULA22() {
-        if (c3.value == "c") {
-            spanText.innerHTML = 'Boa!'
-        } else {
-            spanText.innerHTML = 'ERRO! tente novamente :,('
-        }
-    }
+        c3.value == "c" ? spanText.innerHTML = 'Boa!' : spanText.innerHTML = 'ERRO! tente novamente :,('
+    
+    } // operador ternário
     function ULA23() {
         if (a4.value == "a") {
             spanText.innerHTML = 'Boa! você é um maioral ;)'
